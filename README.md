@@ -8,7 +8,7 @@ Welcome to the Multicuisine Food App, your gateway to a world of diverse and del
 ## Overview
 
 •	Explore classic recipes from our webpage and try new cuisines. Discover a unique experience. We bring easy and simple food to prepare delicious customized meals within a fraction of little effort and time, making it easy to decide what to eat. If you have a diverse culinary background or enjoy exploring different cultural cuisines, our food page is an excellent platform to share these experiences. It allows you to celebrate and promote cultural diversity through the universal language of food. This isn't just a page; it's a community .
-•	The Multicuisine Food App is designed to make your dining experience seamless and enjoyable. With a wide array of dishes from various cuisines, our app brings the flavors of the world to your fingertips. Whether you're craving comfort food, exploring new tastes, or looking for quick and convenient meal options, we've got you covered.
+•	The Multicuisine Food App is designed to make your dining experience seamless and enjoyable. With a wide array of dishes from various cuisines, our app brings the flavors of the world to your fingertips. Whether you're craving comfort food, exploring new tastes, or looking for quick and convenient meal options, we have got you covered.
 
 ## Features
 
