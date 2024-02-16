@@ -21,6 +21,7 @@ Welcome to the Multicuisine Food App, your gateway to a world of diverse and del
 
 
 We hope you have a delightful experience using the Multicuisine Food App!
+Contact @ 91 1234567890
 
 ----------------------thankyou------------------------------------
 
