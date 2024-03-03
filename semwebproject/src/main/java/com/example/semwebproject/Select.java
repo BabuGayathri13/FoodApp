@@ -39,7 +39,7 @@ public class Select {
 			row1.setMethod(rst.getString(5));
 			arr.add(row1);
 
-			System.out.println(arr.size());
+//			System.out.println(arr.size());
 		}
 		return arr;
 	}
