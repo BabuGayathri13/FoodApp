@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Build') { 
             steps {
-                dir('semwebproject') {
+                dir('FoodApp/semwebproject') {
                     sh 'mvn -B -DskipTests clean package' 
                 }
             }
