@@ -1,1 +1,98 @@
-Menu
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menupage</title>
+  <link rel="stylesheet" href="Style.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Include jQuery library from CDN -->
+</head>
+<body class="menubody">
+  <div id="container">
+      <div id="Header" >
+        <img src="images/log2.jpeg" alt="logo">
+        <ul>
+          <h1>Decide What to Eat</h1>
+          <li><a href="index.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div id="Banner" class="slider">
+        <div class="image-container">
+            <div style="height: 10px;"></div>
+            <div style="height: 30px; text-align: center;">
+              <label><input type="text" placeholder="Cuisine"></label>
+              <select id="CuisineDropdown">
+                <option value="All Items">All Items</option>
+                <option value="chinese">Chinese</option>
+                <option value="indian">Indian</option>
+                <option value="nigerian">Nigerian</option>
+              </select>
+              <button id="redirectButton">Go </button>
+            </div>
+            <div id="menu-table-container"></div>
+        </div>
+      </div>
+  </div>
+<div>
+
+</div>
+<script>
+    $(document).ready(function() {
+    	// API endpoint for fetching data
+        var apiBaseUrl = 'http://localhost:8080/food/allItems/'; // Replace with your actual API endpoint
+
+        // Function to create and display the table
+        function createTable(data) {
+            var table = $('<table>');
+            var header = $('<tr>');
+            header.append('<th>Menu</th>');
+            header.append('<th>Ingredients</th>');
+            header.append('<th>Method</th>');
+            table.append(header);
+
+            $.each(data, function(index, item) {
+                var row = $('<tr>');
+                row.append('<td>' + item.menuName + '</td>');
+                row.append('<td>' + item.ingredients + '</td>');
+                row.append('<td>' + item.method + '</td>');
+                table.append(row);
+            });
+
+            $('#menu-table-container').empty().append(table);
+        }
+
+        // Function to fetch data from the API
+        function fetchData(cuisine) {
+        	if (cuisine == 'All Items')
+        		var apiEndpoint = apiBaseUrl;
+        	else
+        		var apiEndpoint = apiBaseUrl + cuisine;
+        	
+            // Make an AJAX request to fetch data from the API
+            $.ajax({
+                url: apiEndpoint,
+                type: 'GET',
+                dataType: 'json',
+                success: function(data) {
+                    // Handle the successful response
+                    createTable(data);
+                },
+                error: function(xhr, status, error) {
+                    // Handle errors
+                    console.error('Error fetching data from API:', error);
+                }
+            });
+        }
+
+        // Bind the fetchData function to the button click event
+        $('#redirectButton').on('click', function() {
+            let data_id = document.getElementById('CuisineDropdown');
+            fetchData(data_id.value);
+        });
+    });
+</script>
+</body>
+</html>

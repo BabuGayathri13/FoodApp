@@ -13,7 +13,7 @@ background-color: rgb(245, 237, 237);
     margin: 0px auto;
   
     height: 700px;
-    width:70%
+    width:100%
 
 }
 #Header{
@@ -108,3 +108,28 @@ div.slider .text-container p {
     color: white;
     font-size: 2rem;
 }
+.menubody {
+    /* Set background image and style */
+   background-image: url(Images/Menuimg2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+table {
+            width: 90%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            height: 500px;
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
