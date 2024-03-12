@@ -22,7 +22,7 @@ pipeline {
         stage('sonar') { 
             steps {
                 dir('semwebproject') {
-                    sh 'mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_95e86ed7f275192daaadf490d0e7d311961e4d5b' 
+                    sh 'mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_62b88187ed339f1612639bd7ab86267d5e5e95f5' 
                 }
             }
         }
