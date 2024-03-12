@@ -1,0 +1,82 @@
+
+
+    body {
+      /* Set background image and style */
+     background-image: url(Images/Menuimg2.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+   body label CusineDropdown{
+    padding: 140px;
+    font-size: 16px;
+
+   }
+
+    /* Style the dropdown and button */
+    #CuisineDropdown {
+      background-color: #333;
+      padding: 10px;
+      font-size: 16px;
+      margin-right: 0;
+      color: aliceblue;
+    }
+
+    #redirectButton {
+      background-color: #333;
+      padding: 10px;
+      font-size: 16px;
+      color: aliceblue;
+    }
+   
+
+    
+    #Header a{
+        float: right;
+       margin-top: 25px;
+       display: flex;
+     /* <!--background-color: #333;
+      padding: 10px;
+      text-align: right; /* Align text to the right 
+      color: antiquewhite */
+    }
+
+    #Header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+#contact{
+  
+  color:black;
+  font-size: 20px;
+  font-style:bold;
+}#contact a{
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  
+}
+
+
+
+
+#Header{
+height: 80px;
+
+}
+
+
+#Header ul li{
+  font-style: italic;
+  display: inline-flex;
+  margin-right: 15px;
+  font-size: 25px;
+}
