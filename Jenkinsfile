@@ -14,7 +14,9 @@ pipeline {
         }
         stage('Build') { 
             steps {
-                sh 'mvn -B -DskipTests clean package' 
+                dir('semwebproject') {
+                    sh 'mvn -B -DskipTests clean package' 
+                }
             }
         }
     }
