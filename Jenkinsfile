@@ -14,8 +14,15 @@ pipeline {
         }
         stage('Build') { 
             steps {
-                dir('FoodApp/semwebproject') {
+                dir('semwebproject') {
                     sh 'mvn -B -DskipTests clean package' 
+                }
+            }
+        }
+        stage('sonar') { 
+            steps {
+                dir('semwebproject') {
+                    sh 'mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.login=sqa_95e86ed7f275192daaadf490d0e7d311961e4d5b' 
                 }
             }
         }
