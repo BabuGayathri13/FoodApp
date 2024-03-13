@@ -13,6 +13,13 @@ pipeline {
                 }
             }
         }
+        stage('Junit') { 
+            steps {
+                dir('semwebproject') {
+                    sh 'mvn -B -DskipTests clean package' 
+                }
+            }
+        }
         stage('sonar') { 
             steps {
                 dir('semwebproject') {
