@@ -16,7 +16,7 @@ pipeline {
         stage('Junit') { 
             steps {
                 dir('semwebproject') {
-                    sh 'mvn -B -DskipTests clean package' 
+                    sh 'mvn test' 
                 }
             }
         }
