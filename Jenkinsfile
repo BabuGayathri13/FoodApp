@@ -17,6 +17,7 @@ pipeline {
             steps {
                 dir('semwebproject') {
                     sh 'mvn test jacoco:prepare-agent jacoco:report' 
+                    junit '**/target/surefire-reports/*.xml'
                     
                 }
             }
