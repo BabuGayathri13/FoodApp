@@ -20,6 +20,15 @@ pipeline {
                 }
             }
         }
+
+        stage('Jacoco') { 
+            steps {
+                dir('semwebproject') {
+                    sh 'mvn clean verify' 
+                }
+            }
+        }
+
         
         stage('sonar') { 
             steps {
