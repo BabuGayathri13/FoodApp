@@ -16,7 +16,8 @@ pipeline {
         stage('Junit') { 
             steps {
                 dir('semwebproject') {
-                    sh 'mvn test' 
+                    sh 'mvn test jacoco:prepare-agent jacoco:report' 
+                    
                 }
             }
         }
@@ -25,6 +26,7 @@ pipeline {
             steps {
                 dir('semwebproject') {
                     sh 'mvn clean verify' 
+                    jacoco(execPattern: '**/target/jacoco.exec')
                 }
             }
         }
