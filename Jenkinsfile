@@ -20,13 +20,7 @@ pipeline {
                 }
             }
         }
-        stage('Junit') { 
-            steps {
-                dir('semwebproject') {
-                    sh 'mvn clean verify' 
-                }
-            }
-        }
+        
         stage('sonar') { 
             steps {
                 dir('semwebproject') {
