@@ -36,7 +36,7 @@ pipeline {
         stage('sonar') { 
             steps {
                 dir('semwebproject') {
-                    sh 'mvn sonar:sonar -Dsonar.host.url=http://localhost:9000' 
+                    sh 'mvn sonar:sonar -Dsonar.host.url=http://192.168.1.84:9000' 
                 }
             }
         }
