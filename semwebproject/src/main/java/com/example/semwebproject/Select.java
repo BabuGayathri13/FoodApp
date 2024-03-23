@@ -33,7 +33,7 @@ public class Select {
 
 	protected ResultSet getResultSet() throws SQLException {
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project2",
-				"GayathriB", "xxx");
+				"GayathriB", "Sardhu@123");
 		Statement st = con.createStatement();
 		ResultSet rst = st.executeQuery("Select * from menu");
 		return rst;
