@@ -1,4 +1,4 @@
-# FoodApp
+# FoodApplication
 Web based food app
 
 # Multicuisine Food Appplication
