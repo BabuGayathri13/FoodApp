@@ -1,7 +1,7 @@
 # FoodApp
 Web based food app
 
-# Multicuisine Food App
+# Multicuisine Food Appplication
 
 Welcome to the Multicuisine Food App, your gateway to a world of diverse and delicious culinary experiences!
 
