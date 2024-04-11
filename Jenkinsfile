@@ -6,7 +6,7 @@ pipeline {
     environment {
         SONAR_TOKEN = credentials('SONAR_TOKEN')
         SONAR_HOST_URL = 'https://sonarcloud.io'
-        SONAR_ORGANIZATION = 'babuGayathri13'
+        SONAR_ORGANIZATION = 'babugayathri13'
         SONAR_PROJECT_KEY = 'BabuGayathri13_FoodApp'
     }
     stages {
