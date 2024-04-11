@@ -22,7 +22,7 @@ Welcome to the Multicuisine Food App, your gateway to a world of diverse and del
 
 We hope you have a delightful experience using the Multicuisine Food App!
 
-Contact FoodApp@ 91 1234567890 and the contact email Id is abc@gmail.com
+Contact FoodApp@ 91 1234567890 and the contact email Id is abc@gmail.com....
 
 
 
