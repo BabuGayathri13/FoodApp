@@ -3,6 +3,12 @@ pipeline {
     tools { 
         maven 'maven3' 
     }
+    environment {
+        SONAR_TOKEN = credentials('SONAR_TOKEN')
+        SONAR_HOST_URL = 'https://sonarcloud.io'
+        SONAR_ORGANIZATION = 'BabuGayathri13'
+        SONAR_PROJECT_KEY = 'BabuGayathri13_FoodApp'
+    }
     stages {
         
         
@@ -36,7 +42,7 @@ pipeline {
         stage('sonar') { 
             steps {
                 dir('semwebproject') {
-                    sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=semwebproject' 
+                    sh 'mvn clean verify sonar:sonar -Dsonar.token=$SONAR_TOKEN -Dsonar.host.url=$SONAR_HOST_URL -Dsonar.organization=$SONAR_ORGANIZATION -Dsonar.projectKey=$SONAR_PROJECT_KEY' 
                 }
             }
         }
