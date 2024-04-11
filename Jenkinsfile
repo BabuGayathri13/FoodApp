@@ -36,7 +36,7 @@ pipeline {
         stage('sonar') { 
             steps {
                 dir('semwebproject') {
-                    sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=BabuGayathri13_FoodApp' 
+                    sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=semwebproject' 
                 }
             }
         }
