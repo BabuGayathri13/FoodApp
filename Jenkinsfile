@@ -36,7 +36,7 @@ pipeline {
         stage('sonar') { 
             steps {
                 dir('semwebproject') {
-                    sh 'mvn sonar:sonar -Dsonar.host.url=http://172.19.97.191:9000 -Dsonar.login=sqa_dfa478f11f619443e5f9bdb43e5d8610184c3719' 
+                    sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=BabuGayathri13_FoodApp' 
                 }
             }
         }
